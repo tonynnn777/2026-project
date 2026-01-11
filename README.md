@@ -22,9 +22,8 @@ Tournament importance (0–5) scales update strength smoothly
 
 Model performance is assessed using:
 
-Log loss
-
-Calibration curves (predicted probability vs observed win rate)
+1.  Log loss
+2.  Calibration curves (predicted probability vs observed win rate)
 
 To reflect real-world usage, matches are split chronologically:
 
@@ -36,7 +35,7 @@ Predictions are always made before observing match outcomes, and ratings are upd
 
 **Results**
 
-Full sample log loss: \~0.656 Out-of-sample test log loss: \~0.642
+Full sample log loss: \~0.656, Out-of-sample test log loss: \~0.642
 
 The model generalizes well to future matches and produces reasonably calibrated probabilities, particularly in the mid-probability range.
 
